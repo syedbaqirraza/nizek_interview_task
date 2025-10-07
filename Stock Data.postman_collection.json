@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "92f1788a-2300-44d8-a776-727c5ee7f9b2",
+		"name": "Stock Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25089087"
+	},
+	"item": [
+		{
+			"name": "API Custom Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/stocks/1/compare?start_date=2024-01-01&end_date=2025-04-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stocks",
+						"1",
+						"compare"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2025-04-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Period Change",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/stocks/1/changes?period=1M",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stocks",
+						"1",
+						"changes"
+					],
+					"query": [
+						{
+							"key": "period",
+							"value": "1M"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
